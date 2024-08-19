@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="/imagens/logo-alura.png" alt="Logo da Alura.">
+    </header>
+    <main>
+        <section class="sectionCriptografar">
+            <textarea class="text-area_criptografar" id="text-area_criptografar" cols="41" rows="14" placeholder="Digite seu texto aqui"></textarea>
+            
+            <div class="informacao">
+                <img class="informacao_icon" src="/imagens/icone_exclamacao.png" alt="icone de alerta">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar(); mostrarBotaoCopiar(); ocultarDivEImage()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+
+        </section>
+             
+        <section class="sectionDescriptografar">
+            <textarea class="textarea_descriptografar" id="text-area" cols="41" rows="14"></textarea>
+            <div class="sectionDescriptografar_div" id="sectionDescriptografar_div">
+                <p class="sectionDescriptografar_paragrafo1">Nenhuma mensagem encontrada</p>
+                <p class="sectionDescriptografar_paragrafo2">Digite um texto que você deseja Criptografar ou Descriptografar</p>
+            </div>
+            <button class="btn-copiar" id="btn-copiar" onclick="escreverTexto()">Copiar</button>      
+        </section>
+
+    </main>
+    <footer>Criado por Robson Barbosa Alcântara. Em 15 de Agosto de 2024.</footer> 
+    <script src="script.js"></script>
+</body>
+</html>
